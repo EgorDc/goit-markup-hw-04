@@ -247,7 +247,11 @@ ul {
 }
 .team-card {
     background-color: var(--background-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08)
 }
+    
 .team-card:not(:last-child) {
     margin-right: 24px;
     border-radius: 0px 0px 4px 4px;
@@ -276,6 +280,17 @@ ul {
     margin: 0 auto;
      
 }
+/*Customers*/
+.customers {
+    padding-top: 126px;
+    padding-bottom: 120px;
+}
+.heading-customers {
+    margin-bottom: 80px;
+}
+.customers-logo {
+}
+
 
 /*footer*/
 .footer {
@@ -341,6 +356,9 @@ ul {
 .button-filters:focus {
     color: var(--background-color);
     background: var(--accent-color);
+    box-shadow:  0px 2px 2px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1)
 }
 .button-filters:hover {
    border: 1px solid transparent; 
@@ -357,7 +375,15 @@ ul {
 }
 .list-card {
     flex-basis: calc((100% - 48px) / 3);
+    
 }
+.list-card:hover,
+.list-card:focus {
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+0px 1px 1px rgba(46, 47, 66, 0.16),
+0px 1px 6px rgba(46, 47, 66, 0.08)
+} 
+
 
 .card-portfolio {
     text-align: start;
