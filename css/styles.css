@@ -28,12 +28,12 @@ margin: 0px;
 .container {
     width: 1158px;
     margin: 0px auto;
-    padding: 0px 15px;
-    
+    padding: 0px 15px; 
 }
 ul {
     list-style: none;
 }
+
 /*header*/
 .header-container {
     display: flex;
@@ -121,16 +121,17 @@ ul {
 }
 .header {
     padding: 188px 0;
-    background-color: rgba(46, 47, 66, 0.7);
-    background-image: url(../images/main_header/people-office.png);
+    background-color: var(--background-color);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+    url(../images/main_header/people-office.png);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: center;
     max-width: 1440px;
     margin-left: auto;
-    margin-right: auto;
-    background-size: contain;
+    margin-right: auto; 
 }
-
 
 .header-block {
     border-bottom: 1px solid #e7e9fc;
@@ -146,7 +147,7 @@ ul {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 48px;
-    }
+}
 .modal-button {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -174,16 +175,12 @@ ul {
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    /*text-transform: capitalize;*/
     color: var(--text-color);
 }
     
 /*section feature*/
 .feature-section {
     padding: 120px 0;
-}
-.container-feature {
-    
 }
 
 .visually-hidden {
@@ -229,23 +226,22 @@ ul {
     letter-spacing: 0.02em;
     color: var(--paragraf-color);
     margin: 0;
-    }
+}
 
 /*section skills*/
 .skills-section {
     padding-bottom: 120px;
 }
-
 .heading-skills {
     margin-bottom: 72px;
 }
 .skills:not(:last-child) {
     margin-right: 24px;
 }
-
 .images {
     display: block
 }
+
 /*section our team*/
 .team {
     background-color: #F4F4FD;
@@ -270,7 +266,6 @@ ul {
     padding: 32px 16px;
     border-radius: 0px 0px 4px 4px;
 }
-
 .card-name {
     font-weight: 500;
     font-size: 20px;
@@ -343,27 +338,24 @@ ul {
     align-items: center;
     justify-content: center; 
 }
-
 .group-icon {
     fill: #8E8F99;
     display: flex;
     margin: auto;
 }
-
 .logo-group:hover {
     border: 1px solid #404BBF;
-  }
+}
 .logo-group:hover .group-icon {
     fill: #404BBF;
-  }
+}
   
 .logo-group:focus {
     border: 1px solid #404BBF;
-  }
+}
 .logo-group:focus .group-icon {
     fill: #404BBF;
-  }
-
+}
 
 /*footer*/
 .footer {
@@ -372,9 +364,11 @@ ul {
     padding: 100px 0;
 }
 .container-footer {
-    display: block;
+    display: flex;
 }
-
+.link-text {
+    margin-right: 120px;
+}
 .link-footer {
     display: inline-block;
     margin-bottom: 16px;
@@ -391,22 +385,29 @@ ul {
     width: 264px;
     margin: 0;
 }
-.footer-icon {
-    display: block;
-    justify-content: center;
-    flex-direction:row;
-}
-.footer-social {
+.footer-icon-box { 
     display: flex;
-    
+    flex-direction:column;
     align-items: flex-start;
     padding: 0px;
-    gap: 16px;
-
+    min-height: 40px;
+    
 }
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px; 
+    margin: 0;
+    width: 208px;
+    min-height: 40px;
+}  
 .footer-name {
-
+    display: block;
     color: #D9D9D9;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
 }
 .socials-footer:hover,
 .socials-footer:focus {
@@ -419,19 +420,17 @@ ul {
 
 .container-portfolio {
     display: block;
-    
 }
 .portfolio-name {
     visibility: hidden;
 }
 .list-button {
-    width: 586;
+    min-width: 586px;
     display: flex;
-    justify-content: center;
+    justify-content:center ;
     gap: 24px;
     margin-bottom: 72px;
 }
-
 .button-filters {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -460,7 +459,6 @@ ul {
 .button-filters:focus {
     border: 1px solid transparent;
 }
-
 .card-set {
     display: flex;
     flex-wrap: wrap;
@@ -468,8 +466,7 @@ ul {
     column-gap: 24px;
 }
 .list-card {
-    flex-basis: calc((100% - 48px) / 3);
-    
+    flex-basis: calc((100% - 48px) / 3); 
 }
 .list-card:hover,
 .list-card:focus {
@@ -477,7 +474,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 0px 1px 1px rgba(46, 47, 66, 0.16),
 0px 1px 6px rgba(46, 47, 66, 0.08)
 } 
-
 
 .card-portfolio {
     text-align: start;
