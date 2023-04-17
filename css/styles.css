@@ -161,9 +161,7 @@ ul {
     padding: 16px 32px;
     border: 1px;
     border-radius: 4px;
-    min-width: 169px;
-
-    
+    min-width: 169px;  
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -176,7 +174,7 @@ ul {
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     color: var(--text-color);
 }
     
@@ -312,10 +310,7 @@ ul {
 .socials-link:focus {
     background-color: #404BBF;
     fill: #F4F4FD;
-
 }
-
-
 /*Customers*/
 .customers {
     padding-top: 126px;
@@ -329,43 +324,46 @@ ul {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
+    margin: 0;
     gap: 24px;
-
-
 }
 .logo-group {
-    display: block;
+    display: flex;
     width: 168px;
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 5px;
-    align-content: ;
+    align-items: center;
+    justify-content: center; 
 }
-
-.logo-group:hover,
-.logo-group:focus {
-    border: 1px solid #404BBF;
-}
-
 .group-link {
-    display: block;
+    display: flex;
     width: 104px;
     height: 56px;
+    align-items: center;
+    justify-content: center; 
 }
-.group-link:hover
-.group-link:focus {
-    fill: #404BBF;
 
-
-}
 .group-icon {
     fill: #8E8F99;
+    display: flex;
+    margin: auto;
 }
-.group-icon:hover,
-.group-icon:focus {
-    fill: #404BBF;
 
-}
+.logo-group:hover {
+    border: 1px solid #404BBF;
+  }
+.logo-group:hover .group-icon {
+    fill: #404BBF;
+  }
+  
+.logo-group:focus {
+    border: 1px solid #404BBF;
+  }
+.logo-group:focus .group-icon {
+    fill: #404BBF;
+  }
+
 
 /*footer*/
 .footer {
@@ -395,11 +393,19 @@ ul {
 }
 .footer-icon {
     display: block;
+    justify-content: center;
+    flex-direction:row;
 }
 .footer-social {
+    display: flex;
+    
+    align-items: flex-start;
+    padding: 0px;
     gap: 16px;
+
 }
 .footer-name {
+
     color: #D9D9D9;
 }
 .socials-footer:hover,
