@@ -356,17 +356,21 @@ ul {
     justify-content: center; 
 }
 .group-link {
-    display: flex;
-    width: 104px;
-    height: 56px;
-    align-items: center;
-    justify-content: center; 
     width: 100%;
     height: 100%;
-    border: 1px solid var(--border-color);
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;width: 104px;
     color: var(--border-color);
 }
+
+.group-link:hover,
+.group-link:focus {
+    border-color: #404bbf;
+    color: #404bbf;
+}
+
 .group-icon {
     display: flex;
     margin: auto;
