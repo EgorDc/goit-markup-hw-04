@@ -84,6 +84,7 @@ ul {
     padding-top: 24px;
     padding-bottom: 24px; 
 }
+
 .list-aitem:not(:last-child) {
     margin-right: 40px;
 }
@@ -92,6 +93,14 @@ ul {
 .link-aitem:hover {
     color: var(--accent-color);
 }
+
+.link-aitem:hover::after {
+    width: 67px;
+    height: 4px;
+    background: #404BBF;
+    border-radius: 2px;
+}
+
 .contacts {
     font-style: normal;
 }
@@ -113,6 +122,9 @@ ul {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+
+
 .contacts-aitem:active,
 .contacts-aitem:hover,
 .contacts-aitem:focus {
@@ -350,7 +362,7 @@ ul {
     display: flex;
     width: 168px;
     height: 88px;
-    border: 1px solid var(--border-color);
+    /*border: 1px solid var(--border-color);*/
     border-radius: 5px;
     align-items: center;
     justify-content: center; 
