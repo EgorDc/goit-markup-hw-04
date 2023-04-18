@@ -361,8 +361,9 @@ ul {
     border-radius: 4px;
     display: flex;
     align-items: center;
-    justify-content: center;width: 104px;
+    justify-content: center;
     color: var(--border-color);
+    border: 1px solid var(--border-color);
 }
 
 .group-link:hover,
